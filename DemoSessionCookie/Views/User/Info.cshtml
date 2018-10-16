@@ -1,0 +1,30 @@
+﻿@model DemoSessionCookie.Models.User
+
+@{
+    ViewData["Title"] = "Info";   
+}
+
+<h2>Info</h2>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <b>Username: </b>
+        </dt>
+        <dd>
+            @Model.Username
+        </dd>
+        <dt>
+           <b>Password: </b>
+        </dt>
+        <dd>
+            @Model.Password Da ma hoa hihi
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
